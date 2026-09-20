@@ -2,7 +2,7 @@
 
 [返回学习地图](../README.md)
 
-所有公开来源访问核查日为2026-09-19。动态网页记录访问日，不猜测发布日期。第一手资料优先用于公司、产品和技术事实；市场数字使用研究机构自己的公开摘要。没有声称读过其付费底表。
+原版公开来源访问核查日为2026-09-19；2026-09-20为交换芯片内部原理新增S32–S39，并复核S11。动态网页记录访问日，不猜测发布日期。第一手资料优先用于公司、产品和技术事实；市场数字使用研究机构自己的公开摘要。没有声称读过其付费底表。
 
 ## 优先读这六类
 
@@ -48,6 +48,14 @@
 | S29 | [Marvell 公司官网](https://www.marvell.com/) | 动态页面 | 公司产品组合与官方入口 |
 | S30 | [Marvell PCIe scale-up 技术说明](https://www.marvell.com/blogs/pcie-switching-ai-scale-up-networks.html) | 2026-05-21 | 260 lane含256数据lane和4管理lane |
 | S31 | [Marvell Alaska P 产品资料入口](https://www.marvell.com/company/media-kit/marvell-alaska-p-pcie-retimer.html) | 动态页面 | PCIe/CXL retimer定位 |
+| S32 | [Marvell Teralynx 10 产品简报](https://www.marvell.com/content/dam/marvell/en/public-collateral/switching/marvell-teralynx-10-data-center-ethernet-switch-product-brief.pdf) | 2023-03修订；2026-09-20核查 | 第1页功能框图，证明SerDes、PCS/FEC、MAC、缓存和转发等模块的集成；不据旧简报判断最新供货 |
+| S33 | [Synopsys：400G/800G Ethernet MAC、PCS与PHY集成](https://www.synopsys.com/articles/integrated-400g-800g-ethernet-ip.html) | 动态页面；2026-09-20核查 | 接口分工、lane组合与芯片集成方式；不作为最新标准版本或市场规模依据 |
+| S34 | [MathWorks：SerDes时钟恢复模型](https://www.mathworks.com/help/serdes/ug/model-clock-recovery-loops.html) | 动态文档；2026-09-20核查 | 均衡与CDR配合的原理；不代表Teralynx具体电路 |
+| S35 | [Cisco：数据中心交换机智能缓存管理](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/white-paper-c11-738488.html) | 2017-06-06更新；2026-09-20核查 | 缓存、突发和排队的基础原理；不把Cisco产品实现套到Marvell |
+| S36 | [AMD：Ethernet MAC Receiver](https://docs.amd.com/r/en-US/am011-versal-acap-trm/MAC-Receiver) | 动态文档；2026-09-20核查 | MAC接收帧检查与FCS；用于功能解释 |
+| S37 | [Teledyne LeCroy Xena：112G SerDes自动协商与链路训练](https://cdn.teledynelecroy.com/files/whitepapers/an-lt-testing-for-112g-serdes.pdf) | 文档未采用搜索引擎推测日期；2026-09-20核查 | 第3–4页解释PAM4、FEC及112G名称与106.25Gb/s线路速率；不采用其历史“当前最高”表述 |
+| S38 | [剑桥大学研究仓储：FEC Killed The Cut-Through Switch](https://www.repository.cam.ac.uk/items/db710919-ddb6-49d2-bf3f-eb7fe5c7f05f) | 研究仓储页面；2026-09-20核查 | 纠错与转发时延的关系；不从论文标题推出当代交换机没有直通模式 |
+| S39 | [AMD：PCS、PMA与PMD](https://docs.amd.com/r/en-US/pg051-tri-mode-eth-mac/PCS-PMA-and-PMD) | 动态文档；2026-09-20核查 | 以太网物理层功能分层；不同速率代际的具体实现另核 |
 
 ## 用户提供的六份笔记
 

@@ -2,7 +2,7 @@
 
 [返回学习地图](../README.md) · [完整来源](../docs/09_sources.md)
 
-核查日2026-09-19。本表保留会影响研究结论的关键口径，不是原文转载。
+公司与市场事实核查日2026-09-19；E21–E23芯片内部与统计边界说明于2026-09-20补充。本表保留会影响研究结论的关键口径，不是原文转载。
 
 | ID | 主张/数值 | 时间与口径 | 性质／来源 | 使用限制 |
 |---|---|---|---|---|
@@ -26,6 +26,9 @@
 | E18 | GB300 NVL72 72 GPU/机柜、最高142kW | 指定官方参考配置 | 原始资料 [S24][S24] | 不是通用功耗换算系数 |
 | E19 | 800VDC混合与行级路线 | 2026-08官方更新 | 厂商路线 [S25][S25] | 目标年不等于部署率 |
 | E20 | NVIDIA与Marvell合作及20亿美元投资 | 2026-03-31 | 正式公告 [S27][S27] | 不推出独家供货或已量产份额 |
+| E21 | Teralynx 10简报列有集成SerDes、PCS/FEC、MAC、转发、缓存和遥测等模块 | 2023-03简报第1页；2026-09-20复核 | 厂商产品框图 [S32][S32] | 集成功能不等于多颗单独销售的芯片；不据框图推模块成本或实测排名 |
+| E22 | PHY可以表示功能边界，Marvell也销售独立PHY／retimer／gearbox产品 | 2026-09-20 | 厂商接口说明及产品目录 [S33][S33] [S11][S11] | 每端口外置器件数量须按实际物料清单确认；不默认1:1 |
+| E23 | 缓存吸收短暂突发，但不增加拥塞出口带宽，长队列会增加等待 | 原理解释；2026-09-20核查 | 设备厂商技术白皮书 [S35][S35] | 不据缓存MB单独判断性能优劣；需同流量、配置与时延测试 |
 
 ## 仍未验证
 
@@ -59,3 +62,7 @@
 [S25]: https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/
 [S27]: https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-134462/d113606dex991.htm
 [S30]: https://www.marvell.com/blogs/pcie-switching-ai-scale-up-networks.html
+[S11]: https://www.marvell.com/products/ethernet-phys.html
+[S32]: https://www.marvell.com/content/dam/marvell/en/public-collateral/switching/marvell-teralynx-10-data-center-ethernet-switch-product-brief.pdf
+[S33]: https://www.synopsys.com/articles/integrated-400g-800g-ethernet-ip.html
+[S35]: https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/white-paper-c11-738488.html
