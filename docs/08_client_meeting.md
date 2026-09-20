@@ -8,11 +8,11 @@
 
 ## 建议开场
 
-“我们初步把数据中心交换需求分为前端、AI后端scale-out和scale-up，同时把光与铜互连作为相关产品模块。考虑到Marvell的产品覆盖多个层级，我们想先确认这次研究是围绕Teralynx以太网交换芯片，还是也包括Structera PCIe/CXL交换以及相关互连器件。确定边界之后，我们会从实际部署架构推算数量和收入，并用行业数据与访谈交叉验证。”
+“我们想先确认这次研究聚焦Teralynx以太网交换芯片，还是还包括PCIe/CXL及互连器件。对于以太网交换，我们建议逐家核实整机厂商年度出货，去掉品牌与ODM重复，再映射芯片和净成交价。我们已经做了公开资料试点：型号对应可以查到，但年度销量和直供拆分仍需访谈。因此先完成小范围取数验证，再确定全球交付范围；外部机构报告只作独立结果的事后校验。”
 
 英文版本：
 
-“We propose to size the opportunity from deployed compute and network architecture, translating endpoints into ports, switches and silicon content. Before setting the scope, we would like to confirm whether the focus is Teralynx Ethernet switch silicon, or whether PCIe/CXL switching and adjacent interconnect products should also be included. We would then separate total demand, the merchant market and Marvell’s serviceable opportunity.”
+“We propose to build an independent shipment estimate by equipment supplier and product family, remove OEM/ODM overlaps, and map configurations to switch silicon and net prices. Our desktop pilot verified some source data and product mappings, but annual shipment and direct-sales splits still require targeted interviews. We would validate data access before committing to global coverage, and use external market reports only as a subsequent cross-check. First, we would like to confirm whether the scope is Teralynx Ethernet silicon or also includes PCIe/CXL and adjacent interconnect products.”
 
 ## 45分钟议程
 
@@ -34,7 +34,7 @@
 6. 全球还是指定地区？地域按最终部署地点还是采购/制造地点？
 7. 是否同意2025实际基年、2026在年估计、2027—2030预测？
 8. 工作负载、速度、客户类型和竞争者需要拆到多细？
-9. 哪些已有数据或假设希望我们挑战？能否提供匿名典型BOM、价格区间与采用节奏？
+9. 哪些已有数据或假设希望我们挑战？能否支持验证年度产品族销量、ODM直供拆分、匿名BOM、净价与库存？客户提供的数据将单独标记来源，不当作我们的独立发现。
 10. 最终使用者如何判断研究有用：规模精度、客户机会、技术路线还是销量/价格预测？
 
 ## 可供客户选择的工作包

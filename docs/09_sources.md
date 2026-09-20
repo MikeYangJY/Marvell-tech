@@ -57,6 +57,10 @@
 | S38 | [剑桥大学研究仓储：FEC Killed The Cut-Through Switch](https://www.repository.cam.ac.uk/items/db710919-ddb6-49d2-bf3f-eb7fe5c7f05f) | 研究仓储页面；2026-09-20核查 | 纠错与转发时延的关系；不从论文标题推出当代交换机没有直通模式 |
 | S39 | [AMD：PCS、PMA与PMD](https://docs.amd.com/r/en-US/pg051-tri-mode-eth-mac/PCS-PMA-and-PMD) | 动态文档；2026-09-20核查 | 以太网物理层功能分层；不同速率代际的具体实现另核 |
 
+## 供应商出货试点补充来源
+
+2026-09-20新增的市场规模试点来源另见[试点P01—P08来源表](../research/market_sizing_pilot.md)：Arista 2025业绩、Celestica 2025年报与产品资料、智邦2023—2025年报。该表保留实际采用的页码和取数限制，不将公司转引650 Group的数据标为独立公司出货证据。
+
 ## 用户提供的六份笔记
 
 | 编号 | 文件名 | 处理方式 |
@@ -72,6 +76,6 @@
 
 ## 更新时的规则
 
-更新财报、产品量产状态和市场季度数据时，同步改证据台账，保留原统计期。新增来源需说明是独立证据还是转述。下一次客户会议前优先复核T100/Structera量产、ASP区间、IDC/Dell’Oro底表定义。2026年10月6日Marvell投资者日为已公告的未来事件，本版未将其尚未发布内容纳入结论。[当前业绩公告][S03]
+更新财报、产品量产状态和市场季度数据时，同步改证据台账，保留原统计期。新增来源需说明是独立证据还是转述。下一次客户会议前优先确认供应商年度产品族销量、直供/代工拆分、芯片净ASP和T100/Structera量产状态；外部机构定义用于后续比对，不作为独立数量底座。2026年10月6日Marvell投资者日为已公告的未来事件，本版未将其尚未发布内容纳入结论。[当前业绩公告][S03]
 
 [S03]: https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results

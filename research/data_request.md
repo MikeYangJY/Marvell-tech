@@ -1,6 +1,8 @@
 # 数据请求、参数字典与访谈记录
 
-[返回学习地图](../README.md)
+[返回学习地图](../README.md) · [供应商工作底表](vendor_shipment_ledger.md) · [实际试点](market_sizing_pilot.md)
+
+2026-09-20更新。主模型围绕供应商年度产品族出货；架构、电力和服务器参数用于有独立样本的辅助校验。
 
 ## 优先采集的参数
 
@@ -9,37 +11,44 @@ P0会显著改变结论，需优先验证；P1用于拆分和完善。值尚未�
 | 优先级 | 字段 | 单位及统计口径 | 桌面入口 | 一手验证对象 |
 |---|---|---|---|---|
 | P0 | 产品与网络范围 | SKU、物理fabric、纳入/排除 | 官网产品目录 | Marvell产品团队 |
-| P0 | 年度设备配置事件量 | 新建/替换/网络单独升级，台或GPU颗 | 出货研究、客户部署资料 | 运营方、OEM |
-| P0 | 每设备网络连接 | 每fabric每平面端口，Gb/s | 系统参考架构 | 网络架构师 |
-| P0 | 网络是否共用 | 共用/独立及物理端口归属 | 设计文档 | 运营方 |
-| P0 | 拓扑 | 层级、下联/上联、超售、多平面 | 官方架构、设备brief | OEM与网络架构师 |
+| P0 | 年度产品族供货量 | 自然年、台；品牌供货或ODM直供；非生产/订单/累计量 | 公司产销表、经营披露 | 销售运营、交付计划、实际采购 |
+| P0 | 端口量转换条件 | 物理/逻辑、出厂/已启用、每配置端口、breakout | 产品手册、同口径端口披露 | 产品及硬件负责人 |
+| P0 | 数据中心范围 | 产品用途、协议、配置；未知用途单列 | 产品目录、项目资料 | 产品管理、采购 |
+| P0 | 品牌/ODM去重 | 代工、直供、集团转售，项目与季度对应 | 客户/业务模式披露 | ODM项目、品牌计划/采购 |
+| P0 | 收入反推台数的条件 | 同产品族硬件收入、同销售层的加权净整机ASP | 产品族经营披露 | 销售运营与采购；仅在无直接数量时使用 |
 | P0 | 每设备ASIC BOM | 分SKU颗数，含line-card/fabric | 设备拆解与公开配置 | OEM/ODM硬件工程 |
 | P0 | 净ASP | 美元/颗，分代际、量级、年度 | 公开资料只提供线索 | 采购、芯片及供应链专家 |
-| P0 | 外购比例 | 对外购买ASIC颗数占比 | 自研披露、产品映射 | 采购/OEM |
+| P0 | 芯片采购属性 | 每行merchant/captive判定，尽量不套总比例 | 自研披露、产品映射 | 采购/OEM |
 | P0 | Marvell技术覆盖 | 协议、速率、软件、地域、认证 | 产品资料 | 产品/客户架构团队 |
 | P0 | 客户可进入性 | 定点窗口、单/双供、爬坡比例 | 合作/定点公开公告 | 采购、生态专家 |
-| P0 | 以太网采用量份额 | 同设备/同带宽单位内份额 | 市场研究不可直接用收入份额代替 | 运营方 |
-| P1 | 速率与代际组合 | 各分组之和100% | tracker、产品路线 | OEM/运营方 |
+| P0 | 库存与收入年度桥接 | 芯片至整机计数节点的库存净变化、备件/损耗与确认差异 | 供应链披露；公开通常不足 | ODM/品牌/芯片采购 |
+| P0 | 缺失供应商/产品 | 具体名称及数量区间依据；未知不填零 | 产品目录、采购及渠道清单 | 供应商及使用方 |
+| P1 | 年度设备配置事件量 | 已知客户的新建/替换/网络单独升级，台或GPU颗 | 客户部署资料，非机构总量乘份额 | 运营方、OEM |
+| P1 | 每设备连接、共网与拓扑 | 每fabric端口、层级、超售、多平面 | 官方架构、设备brief | 网络架构师 |
+| P1 | 以太网采用量份额 | 同设备/同带宽单位内，限架构校验样本 | 项目协议证据；不能用机构收入份额 | 运营方 |
+| P1 | 速率与代际组合 | 同厂商各产品族数量之和与其总数一致 | 产品路线、自己的出货底表 | OEM/运营方 |
 | P1 | 网络复用率 | 替换设备中沿用网络的比例 | 少有公开 | 运营方 |
-| P1 | 交付与库存时间差 | 芯片发货至系统交付月数 | 供应链披露 | ODM/采购 |
 | P1 | 光铜组合 | 分链路距离、速率的数量份额 | 模块brief、架构 | 模块/AEC供应商 |
 | P1 | DSP附着率 | 模块/引擎中带独立DSP的比例 | 产品BOM | 光互连专家 |
 | P1 | 地域 | 最终部署地另列采购/制造地 | 项目与发货资料 | 采购/运营方 |
 | P1 | 投运电力 | 本年可用设施MW、IT MW | 官方投运公告 | 设施负责人 |
 | P1 | 每端点IT功率 | kW，明确CPU/网络/存储范围 | 系统功耗预算 | 系统/设施架构 |
-| P1 | 价格边界 | 税、光模块、软件、服务、渠道 | tracker定义、报价 | 数据提供方/采购 |
+| P1 | 价格边界 | 税、光模块、软件、服务、渠道 | 合同或报价口径 | 数据提供方/采购 |
 
 ## 推荐数据库一行结构
 
 ```text
-record_id | natural_year | actual_estimate_forecast | deployment_region
-customer_type | workload | physical_fabric_id | architecture | speed_gbps
-asic_generation | quantity | unit | price_usd | revenue_layer
-source_id | source_date | evidence_type | low | central | high
-dedup_key | assumptions | reviewer | next_validation
+record_id | natural_year | quarter | actual_estimate_forecast
+vendor_group | brand | manufacturer | product_family | configuration
+protocol | dc_use | sales_route | count_at | raw_observation | raw_unit
+quantity_low | quantity_base | quantity_high | quantity_method
+asic_model | asic_per_configuration | merchant_or_captive
+net_asp | asp_year | inventory_bridge | revenue_layer
+source_id | source_date | evidence_type | independence_check
+dedup_key | include_status | unresolved_gap | reviewer | next_validation
 ```
 
-dedup_key至少含“终端部署项目/匿名客户×交付事件×物理fabric×设备类别”。如果同一设备从ODM转售给品牌厂，只保留所选计价层的一笔外部收入。客户编码、访谈原话和价格须按其允许的使用范围保存。
+供应商去重键采用“年度/季度×归属集团/品牌×匿名产品项目×配置×销售路径”，另建ODM项目到品牌最终计数行的对应。架构校验另用“匿名客户/部署项目×交付事件×物理fabric×设备类别”。键不自动解决库存跨期，仍需人工核对。客户编码、访谈原话和价格须按其允许的使用范围保存。
 
 ## 访谈记录模板
 
@@ -59,4 +68,3 @@ dedup_key至少含“终端部署项目/匿名客户×交付事件×物理fabric
 ## 证据冲突怎么处理
 
 先检查年份、地域、品牌/ODM、芯片/整机、端口/设备、收入/数量、送样/量产是否一致。仍冲突则保留两个区间与理由，安排能观察实际交付或采购的人验证。不因受访者职位高就覆盖可核对的原始数据。
-

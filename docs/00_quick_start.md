@@ -48,7 +48,9 @@ Marvell Technology在纳斯达克上市，代码MRVL。它设计把数据搬动�
 
 ## 你应能口头讲出的研究逻辑
 
-“我们先把实际网络架构翻译成端口、设备和芯片数量，再按代际和成交价形成收入。整机市场用于交叉验证，电力容量用于检查部署是否现实。我们会分别给出总需求、可服务市场和可争取收入，并通过运营商、整机/ODM、芯片和光互连访谈验证关键参数。”
+“我们先逐家核实设备厂商的年度数据中心交换机出货，去掉品牌厂与ODM重复，再按具体配置查芯片颗数、型号和成交净价。公开资料不够的地方用针对性访谈补齐；机构报告只在独立计算后校验。最终分别给出总需求、商用芯片市场和Marvell可服务机会；缺资料的部分明确保留，不假装已经算全。”
+
+实际桌面试点及其限制见[三家厂商试点](../research/market_sizing_pilot.md)，完整步骤见[第06章](06_market_sizing.md)。
 
 [S03]: https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results
 [S04]: https://www.marvell.com/products/data-center-switches.html

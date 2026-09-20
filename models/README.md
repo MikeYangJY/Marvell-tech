@@ -1,6 +1,10 @@
-# 可修改的市场测算演示模型
+# 架构教学模型与新版供应商底表入口
 
 [返回学习地图](../README.md) · [完整测算方法](../docs/06_market_sizing.md)
+
+**2026-09-20定位更新：正式研究主线已改为供应商出货法。** 请从[供应商工作底表](../research/vendor_shipment_ledger.md)开始，并先读[实际试点及缺口](../research/market_sizing_pilot.md)。新版底表目前以可审查的Markdown字段和证据记录呈现，尚未填成全球数值模型。
+
+下面保留的Excel只用于[架构换算教学与辅助校验](../docs/06a_validation_methods.md)，不是新版独立市场模型，也不是试点真实销量的计算文件。Excel中的机构锚点只作背景，不作为新版独立输入。
 
 [下载 market_sizing_demo.xlsx](market_sizing_demo.xlsx)。在GitHub文件页使用下载按钮，用Excel或兼容软件打开。
 
